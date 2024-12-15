@@ -37,7 +37,8 @@ public class stockfetcher {
            // Display stock price
            String message = "Stock Symbol: " + stockSymbol.toUpperCase() + "\n"
                    + "Current Price: $" + price + "\n"
-                   + "Change Percent: " + changePercent;
+                   + "Change Percent: " + changePercent +"\n"
+                   + "last trading day: "+globalQuote.get("07. latest trading day");
            JOptionPane.showMessageDialog(null, message,"STOCK CLOSING PRICE INFO",JOptionPane.INFORMATION_MESSAGE);
        } catch (Exception e) {
           JOptionPane.showInputDialog(null,"AN error occured"+e.getMessage(),JOptionPane.ERROR_MESSAGE);
